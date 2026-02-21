@@ -2,27 +2,28 @@ import { useNavigate } from "react-router-dom";
 import checkmark from "../images/checkmark.png";
 
 const Login = () => {
-
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const NavigateToLogin = () => {
-      navigate("/dashboard");
-  }
+    navigate("/main/dashboard");
+  };
 
   return (
-    <div className="flex 
+    <div
+      className="flex 
         flex-col 
         h-screen
         w-screen
-        md:flex-row">
-      
+        md:flex-row"
+    >
       {/* LEFT SIDE */}
-      <div className="bg-[rgb(27,34,34)] 
+      <div
+        className="bg-[rgb(27,34,34)] 
     w-full md:w-1/2 
     flex-1 
     p-14 
-    flex flex-col justify-between">
-        
+    flex flex-col justify-between"
+      >
         {/* Header */}
         <header>
           <div className="flex items-center">
@@ -42,8 +43,9 @@ const Login = () => {
           </h1>
 
           <p className="mt-6 text-lg text-gray-400 max-w-md">
-            Stop guessing where your money goes. Track expenses, set smart budgets,
-            and visualize your spending habits in one beautiful dashboard.
+            Stop guessing where your money goes. Track expenses, set smart
+            budgets, and visualize your spending habits in one beautiful
+            dashboard.
           </p>
 
           <div className="mt-10 space-y-5 text-white text-lg">
@@ -71,21 +73,22 @@ const Login = () => {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="bg-[rgb(12,18,33)] 
+      <div
+        className="bg-[rgb(12,18,33)] 
     w-full md:w-1/2 
     flex-1 
-    flex flex-col items-center justify-center">
-        
-        <h2 className="text-white text-3xl font-bold">
-          Welcome Back
-        </h2>
+    flex flex-col items-center justify-center"
+      >
+        <h2 className="text-white text-3xl font-bold">Welcome Back</h2>
 
         <p className="text-gray-400 text-lg mt-3">
           Sign in to access your dashboard
         </p>
 
-        <button className="mt-6 bg-emerald-400 w-80 h-12 rounded-xl text-white border border-white font-semibold hover:scale-105 transition-transform duration-200"
-            onClick={NavigateToLogin}>
+        <button
+          className="mt-6 bg-emerald-400 w-80 h-12 rounded-xl text-white border border-white font-semibold hover:scale-105 transition-transform duration-200"
+          onClick={NavigateToLogin}
+        >
           Sign In
         </button>
 
